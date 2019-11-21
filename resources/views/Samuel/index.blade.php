@@ -12,16 +12,8 @@
   </head>
   <body>
     <h1>{{$title}}</h1>
-    @foreach ($users as $item)
-      {{'nombre: ' . $item->name . ' email: ' . $item->email}}<br>
-        
-    @endforeach
-    @foreach ($piraquive as $item)
+    @foreach ($materias as $item)
       {{'nombre: ' . $item->nombre}}<br>
-        
-    @endforeach
-    @foreach ($usuario as $item)
-      {{'nombre: ' . $item->contraseña}}<br>
         
     @endforeach
     
