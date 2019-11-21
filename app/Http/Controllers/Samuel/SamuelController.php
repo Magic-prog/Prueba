@@ -7,6 +7,7 @@ use App\Http\Controllers\Samuel\SamuelBaseController;
 use Illuminate\Support\Facades\App;
 use App\User;
 use App\Piraquive;
+use App\usuario;
 
 
 class SamuelController extends SamuelBaseController
@@ -19,6 +20,7 @@ class SamuelController extends SamuelBaseController
         $prueba-> save();
         $this->users = User::select("*")->get();
         $this->piraquive = Piraquive::all();
+        $this->usuario = usuario::select("*")->get();
         
         return view('Samuel.index',$this->data);
     }

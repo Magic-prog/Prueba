@@ -20,6 +20,10 @@
       {{'nombre: ' . $item->nombre}}<br>
         
     @endforeach
+    @foreach ($usuario as $item)
+      {{'nombre: ' . $item->contraseña}}<br>
+        
+    @endforeach
     
 
     <!-- Optional JavaScript -->
