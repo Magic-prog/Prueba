@@ -14,7 +14,10 @@ class SamuelController extends SamuelBaseController
     public function index(){
         $this->title = "Bienvenido Samuel";
         $this->title_page = "ASAP";
-        $this->materias = Materias::all();
+        $this->materias = new Materia();
+        $this->materias->nombre = '1';
+        $this->materias->save();
+
         
         return view('Samuel.index',$this->data);
     }
